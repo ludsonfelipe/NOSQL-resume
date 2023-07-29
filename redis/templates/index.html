@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ranking</title>
+</head>
+<body>
+    <h1>Ranking</h1>
+    <h2>Primeiro lugar: {{ primeiro_lugar }}</h2>
+    <h2>Usuário 1: {{ usuario1_pontos }}</h2>
+    <form action="/usuario1" method="GET">
+        <button type="submit">Aumentar Pontos</button>
+    </form>
+    <h2>Usuário 2: {{ usuario2_pontos }}</h2>
+    <form action="/usuario2" method="GET">
+        <button type="submit">Aumentar Pontos</button>
+    </form>
+    <p>Último momento em que um usuário subiu no ranking: {{ ultimo_momento }}</p>
+</body>
+</html>
